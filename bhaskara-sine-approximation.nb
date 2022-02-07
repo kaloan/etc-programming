@@ -1,0 +1,113 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3246,        105]
+NotebookOptionsPosition[      2731,         89]
+NotebookOutlinePosition[      3109,        105]
+CellTagsIndexPosition[      3066,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"x", " ", "Degree"}], "]"}], "-", 
+     FractionBox[
+      RowBox[{"4", "x", 
+       RowBox[{"(", 
+        RowBox[{"180", "\[Minus]", "x"}], ")"}]}], 
+      RowBox[{"40500", "\[Minus]", 
+       RowBox[{"x", 
+        RowBox[{"(", 
+         RowBox[{"180", "\[Minus]", "x"}], ")"}]}]}]]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "180"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8532073272296147`*^9, 3.8532073374651437`*^9}, {
+  3.853207424274668*^9, 
+  3.85320748144565*^9}},ExpressionUUID->"40bd95d9-9ce2-4fac-b4ef-\
+3c2ea2095b1b"],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "@", 
+  RowBox[{"N", "@", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", "180"], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"Abs", "[", 
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         RowBox[{"x", " ", "Degree"}], "]"}], "-", 
+        FractionBox[
+         RowBox[{"4", "x", 
+          RowBox[{"(", 
+           RowBox[{"180", "\[Minus]", "x"}], ")"}]}], 
+         RowBox[{"40500", "\[Minus]", 
+          RowBox[{"x", 
+           RowBox[{"(", 
+            RowBox[{"180", "\[Minus]", "x"}], ")"}]}]}]]}], "]"}], "2"], 
+     RowBox[{"\[DifferentialD]", "x"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8532081082165995`*^9, 
+  3.8532081757353706`*^9}},ExpressionUUID->"f02b8ef0-f7a6-4871-a0b0-\
+4b5e35e31503"],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "@", 
+  RowBox[{"NIntegrate", "[", 
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"x", " ", "Degree"}], "]"}], "-", 
+       FractionBox[
+        RowBox[{"4", "x", 
+         RowBox[{"(", 
+          RowBox[{"180", "\[Minus]", "x"}], ")"}]}], 
+        RowBox[{"40500", "\[Minus]", 
+         RowBox[{"x", 
+          RowBox[{"(", 
+           RowBox[{"180", "\[Minus]", "x"}], ")"}]}]}]]}], "]"}], "2"], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "180"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8532082030515013`*^9, 
+  3.853208229214079*^9}},ExpressionUUID->"f85d104a-7bcb-43ae-a323-\
+e90cb8146feb"]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.4 Inherited,
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 686, 20, 69, "Input",ExpressionUUID->"40bd95d9-9ce2-4fac-b4ef-3c2ea2095b1b"],
+Cell[1247, 42, 756, 22, 68, "Input",ExpressionUUID->"f02b8ef0-f7a6-4871-a0b0-4b5e35e31503"],
+Cell[2006, 66, 721, 21, 68, "Input",ExpressionUUID->"f85d104a-7bcb-43ae-a323-e90cb8146feb"]
+}
+]
+*)
+
