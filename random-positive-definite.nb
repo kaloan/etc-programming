@@ -1,0 +1,90 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2800,         82]
+NotebookOptionsPosition[      2391,         67]
+NotebookOutlinePosition[      2755,         83]
+CellTagsIndexPosition[      2712,         80]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RandomPositiveDefiniteMatrix", "[", 
+   RowBox[{
+    RowBox[{"n_", "?", "IntegerQ"}], "/;", 
+    RowBox[{"n", ">", "0"}]}], "]"}], ":=", 
+  RowBox[{"Module", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"M", "=", 
+       RowBox[{"RandomVariate", "@", 
+        RowBox[{"CircularRealMatrixDistribution", "@", "n"}]}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"eigs", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"RandomReal", "[", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1000"}], "}"}], "]"}], ",", "n"}], "]"}]}]}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"M", "=", 
+     RowBox[{
+      RowBox[{"Transpose", "@", "M"}], ".", 
+      RowBox[{"(", 
+       RowBox[{"eigs", " ", "M"}], ")"}]}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.878135766865809*^9, 3.8781358294671907`*^9}, {
+   3.8781359444180307`*^9, 3.8781359787268457`*^9}, {3.8781363376854963`*^9, 
+   3.878136351831708*^9}, {3.878136420160236*^9, 3.878136432547126*^9}, {
+   3.878136474127256*^9, 3.8781364751993637`*^9}, {3.8781365155645103`*^9, 
+   3.878136521117251*^9}, {3.878136572252894*^9, 3.878136595494948*^9}, 
+   3.878136628987175*^9, {3.8781368176614227`*^9, 
+   3.8781368209878387`*^9}},ExpressionUUID->"c6643e94-6780-467f-8ae4-\
+e47c673c2ef9"],
+
+Cell[BoxData[
+ RowBox[{"And", "@@", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"PositiveDefiniteMatrixQ", "@", 
+     RowBox[{"RandomPositiveDefiniteMatrix", "[", "100", "]"}]}], ",", 
+    "1000"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878136289683436*^9, 3.878136324573139*^9}, {
+   3.878136636972661*^9, 3.878136742369583*^9}, 3.878136781191393*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"d2f46176-122f-40e1-9b81-9e786b34b77b"]
+},
+WindowSize->{1920, 1012},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+Magnification:>2.4 Inherited,
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1387, 34, 291, "Input",ExpressionUUID->"c6643e94-6780-467f-8ae4-e47c673c2ef9"],
+Cell[1948, 56, 439, 9, 74, "Input",ExpressionUUID->"d2f46176-122f-40e1-9b81-9e786b34b77b"]
+}
+]
+*)
+
